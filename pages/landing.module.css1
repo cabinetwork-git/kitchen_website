@@ -1,0 +1,443 @@
+.vito-page {
+  background: #F4F8FB;
+  color: #0D1B2A;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── NAV ── */
+.vito-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(13, 27, 42, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(46, 134, 193, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: 64px;
+}
+
+.vito-logo {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #F4F8FB;
+  letter-spacing: -0.02em;
+}
+
+.vito-logo span {
+  color: #2E86C1;
+}
+
+.vito-nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.vito-nav-links a {
+  color: #8EA8BB;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.vito-nav-links a:hover {
+  color: #F4F8FB;
+}
+
+.vito-nav-cta {
+  background: #2E86C1;
+  color: #F4F8FB;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.vito-nav-cta:hover {
+  background: #4A90A4;
+}
+
+/* ── HERO ── */
+.vito-hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0D1B2A 0%, #1B3A5C 60%, #1a4a6e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 5vw 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.vito-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 60% 40%,
+    rgba(46, 134, 193, 0.15) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.vito-hero-badge {
+  display: inline-block;
+  background: rgba(46, 134, 193, 0.15);
+  border: 1px solid rgba(46, 134, 193, 0.4);
+  color: #4A90A4;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.vito-hero h1 {
+  font-family: sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  color: #F4F8FB;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.vito-hero h1 em {
+  font-style: normal;
+  background: linear-gradient(90deg, #2E86C1, #4A90A4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vito-hero p {
+  color: #8EA8BB;
+  font-size: 1.1rem;
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+}
+
+.vito-hero-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #2E86C1;
+  color: #F4F8FB;
+  border: none;
+  cursor: pointer;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+  background: #4A90A4;
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #F4F8FB;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-ghost:hover {
+  border-color: #2E86C1;
+  background: rgba(46, 134, 193, 0.1);
+}
+
+/* ── STATS STRIP ── */
+.vito-stats {
+  background: #112236;
+  border-top: 1px solid rgba(46, 134, 193, 0.2);
+  border-bottom: 1px solid rgba(46, 134, 193, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 0;
+}
+
+.vito-stat {
+  flex: 1;
+  min-width: 180px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  border-right: 1px solid rgba(46, 134, 193, 0.15);
+}
+
+.vito-stat:last-child {
+  border-right: none;
+}
+
+.vito-stat-num {
+  font-family: sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2E86C1;
+}
+
+.vito-stat-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #8EA8BB;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.25rem;
+}
+
+/* ── SECTIONS ── */
+.vito-section {
+  padding: 5rem 5vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vito-section-dark {
+  background: #0D1B2A;
+  max-width: 100%;
+  padding: 5rem 5vw;
+}
+
+.vito-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vito-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2E86C1;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.vito-section-title {
+  font-family: sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #0D1B2A;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.vito-section-dark .vito-section-title {
+  color: #F4F8FB;
+}
+
+.vito-section-sub {
+  color: #8EA8BB;
+  font-size: 1rem;
+  max-width: 520px;
+  margin-bottom: 3rem;
+}
+
+/* ── SERVICE GRID ── */
+.vito-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.vito-card {
+  background: #D6E4F0;
+  border: 1px solid rgba(46, 134, 193, 0.15);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
+}
+
+.vito-card:hover {
+  border-color: #2E86C1;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(46, 134, 193, 0.12);
+}
+
+.vito-card-dark {
+  background: #112236;
+  border: 1px solid rgba(46, 134, 193, 0.2);
+}
+
+.vito-card-dark:hover {
+  border-color: #2E86C1;
+  box-shadow: 0 12px 32px rgba(46, 134, 193, 0.15);
+}
+
+.vito-card-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(46, 134, 193, 0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2E86C1;
+}
+
+.vito-card h3 {
+  font-family: sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0D1B2A;
+  margin-bottom: 0.5rem;
+}
+
+.vito-card-dark h3 {
+  color: #F4F8FB;
+}
+
+.vito-card p {
+  font-size: 0.9rem;
+  color: #5a7a8a;
+  line-height: 1.5;
+}
+
+.vito-card-dark p {
+  color: #8EA8BB;
+}
+
+/* ── CONTACT ── */
+.vito-contact-row {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.vito-contact-info {
+  flex: 1;
+  min-width: 260px;
+}
+
+.vito-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  color: #8EA8BB;
+  font-size: 0.95rem;
+}
+
+.vito-contact-item strong {
+  color: #F4F8FB;
+}
+
+.vito-contact-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: rgba(46, 134, 193, 0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #2E86C1;
+}
+
+.vito-contact-box {
+  flex: 1;
+  min-width: 260px;
+  background: #D6E4F0;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.vito-contact-box-title {
+  color: #1B3A5C;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.vito-contact-bullet {
+  font-size: 0.9rem;
+  color: #1B3A5C;
+  line-height: 2;
+}
+
+.vito-check {
+  color: #2E86C1;
+  margin-right: 0.5rem;
+}
+
+/* ── FOOTER ── */
+.vito-footer {
+  background: #080f18;
+  border-top: 1px solid rgba(46, 134, 193, 0.15);
+  padding: 2rem 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.vito-footer-logo {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #F4F8FB;
+}
+
+.vito-footer-logo span {
+  color: #2E86C1;
+}
+
+.vito-footer p {
+  color: #8EA8BB;
+  font-size: 0.8rem;
+}
+
+.vito-footer-phone {
+  color: #4A90A4 !important;
+  font-size: 0.8rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .vito-nav-links {
+    display: none;
+  }
+
+  .vito-stat {
+    min-width: 140px;
+    padding: 1.5rem;
+  }
+
+  .vito-contact-row {
+    flex-direction: column;
+  }
+}
