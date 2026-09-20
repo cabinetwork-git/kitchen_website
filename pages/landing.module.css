@@ -1,6 +1,6 @@
 .vito-page {
-  background: #F4F8FB;
-  color: #0D1B2A;
+  background: #FBF7F0;
+  color: #241C14;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -14,9 +14,9 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(13, 27, 42, 0.96);
+  background: rgba(36, 28, 20, 0.96);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(46, 134, 193, 0.2);
+  border-bottom: 1px solid rgba(192, 138, 62, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,12 +28,12 @@
   font-family: sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
-  color: #F4F8FB;
+  color: #FBF7F0;
   letter-spacing: -0.02em;
 }
 
 .vito-logo span {
-  color: #2E86C1;
+  color: #C08A3E;
 }
 
 .vito-nav-links {
@@ -43,7 +43,7 @@
 }
 
 .vito-nav-links a {
-  color: #8EA8BB;
+  color: #B8A78E;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -51,12 +51,12 @@
 }
 
 .vito-nav-links a:hover {
-  color: #F4F8FB;
+  color: #FBF7F0;
 }
 
 .vito-nav-cta {
-  background: #2E86C1;
-  color: #F4F8FB;
+  background: #C08A3E;
+  color: #FBF7F0;
   border: none;
   cursor: pointer;
   padding: 0.5rem 1.2rem;
@@ -67,7 +67,7 @@
 }
 
 .vito-nav-cta:hover {
-  background: #4A90A4;
+  background: #A9744A;
 }
 
 /* ── MOBILE MENU TOGGLE (hamburger icon) ── */
@@ -88,7 +88,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: #F4F8FB;
+  background: #FBF7F0;
   border-radius: 2px;
   transition: transform 0.2s, opacity 0.2s;
 }
@@ -112,30 +112,30 @@
   left: 0;
   right: 0;
   z-index: 99;
-  background: #0D1B2A;
-  border-bottom: 1px solid rgba(46, 134, 193, 0.2);
+  background: #241C14;
+  border-bottom: 1px solid rgba(192, 138, 62, 0.2);
   display: flex;
   flex-direction: column;
   padding: 1rem 5vw 1.5rem;
 }
 
 .vito-mobile-menu a {
-  color: #8EA8BB;
+  color: #B8A78E;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   padding: 0.85rem 0;
-  border-bottom: 1px solid rgba(46, 134, 193, 0.1);
+  border-bottom: 1px solid rgba(192, 138, 62, 0.1);
 }
 
 .vito-mobile-menu a:hover {
-  color: #F4F8FB;
+  color: #FBF7F0;
 }
 
 /* ── HERO ── */
 .vito-hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0D1B2A 0%, #1B3A5C 60%, #1a4a6e 100%);
+  background: linear-gradient(135deg, #241C14 0%, #3B2E22 60%, #4a3626 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +151,7 @@
   inset: 0;
   background: radial-gradient(
     ellipse at 60% 40%,
-    rgba(46, 134, 193, 0.15) 0%,
+    rgba(192, 138, 62, 0.15) 0%,
     transparent 60%
   );
   pointer-events: none;
@@ -159,9 +159,9 @@
 
 .vito-hero-badge {
   display: inline-block;
-  background: rgba(46, 134, 193, 0.15);
-  border: 1px solid rgba(46, 134, 193, 0.4);
-  color: #4A90A4;
+  background: rgba(192, 138, 62, 0.15);
+  border: 1px solid rgba(192, 138, 62, 0.4);
+  color: #A9744A;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -175,7 +175,7 @@
   font-family: sans-serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 800;
-  color: #F4F8FB;
+  color: #FBF7F0;
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 1.25rem;
@@ -183,13 +183,13 @@
 
 .vito-hero h1 em {
   font-style: normal;
-  background: linear-gradient(90deg, #2E86C1, #4A90A4);
+  background: linear-gradient(90deg, #C08A3E, #A9744A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .vito-hero p {
-  color: #8EA8BB;
+  color: #B8A78E;
   font-size: 1.1rem;
   max-width: 540px;
   margin: 0 auto 2.5rem;
@@ -203,8 +203,8 @@
 }
 
 .btn-primary {
-  background: #2E86C1;
-  color: #F4F8FB;
+  background: #C08A3E;
+  color: #FBF7F0;
   border: none;
   cursor: pointer;
   padding: 0.85rem 2rem;
@@ -215,13 +215,13 @@
 }
 
 .btn-primary:hover {
-  background: #4A90A4;
+  background: #A9744A;
   transform: translateY(-2px);
 }
 
 .btn-ghost {
   background: transparent;
-  color: #F4F8FB;
+  color: #FBF7F0;
   border: 1px solid rgba(255, 255, 255, 0.25);
   cursor: pointer;
   padding: 0.85rem 2rem;
@@ -232,15 +232,15 @@
 }
 
 .btn-ghost:hover {
-  border-color: #2E86C1;
-  background: rgba(46, 134, 193, 0.1);
+  border-color: #C08A3E;
+  background: rgba(192, 138, 62, 0.1);
 }
 
 /* ── STATS STRIP ── */
 .vito-stats {
-  background: #112236;
-  border-top: 1px solid rgba(46, 134, 193, 0.2);
-  border-bottom: 1px solid rgba(46, 134, 193, 0.2);
+  background: #2E2418;
+  border-top: 1px solid rgba(192, 138, 62, 0.2);
+  border-bottom: 1px solid rgba(192, 138, 62, 0.2);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -253,7 +253,7 @@
   min-width: 180px;
   padding: 2rem 2.5rem;
   text-align: center;
-  border-right: 1px solid rgba(46, 134, 193, 0.15);
+  border-right: 1px solid rgba(192, 138, 62, 0.15);
 }
 
 .vito-stat:last-child {
@@ -264,13 +264,13 @@
   font-family: sans-serif;
   font-size: 2.2rem;
   font-weight: 800;
-  color: #2E86C1;
+  color: #C08A3E;
 }
 
 .vito-stat-label {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #8EA8BB;
+  color: #B8A78E;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-top: 0.25rem;
@@ -284,7 +284,7 @@
 }
 
 .vito-section-dark {
-  background: #0D1B2A;
+  background: #241C14;
   max-width: 100%;
   padding: 5rem 5vw;
 }
@@ -297,7 +297,7 @@
 .vito-eyebrow {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #2E86C1;
+  color: #C08A3E;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-bottom: 0.75rem;
@@ -307,18 +307,18 @@
   font-family: sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: 800;
-  color: #0D1B2A;
+  color: #241C14;
   letter-spacing: -0.025em;
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
 .vito-section-dark .vito-section-title {
-  color: #F4F8FB;
+  color: #FBF7F0;
 }
 
 .vito-section-sub {
-  color: #8EA8BB;
+  color: #B8A78E;
   font-size: 1rem;
   max-width: 520px;
   margin-bottom: 3rem;
@@ -332,62 +332,62 @@
 }
 
 .vito-card {
-  background: #D6E4F0;
-  border: 1px solid rgba(46, 134, 193, 0.15);
+  background: #EFE6D8;
+  border: 1px solid rgba(192, 138, 62, 0.15);
   border-radius: 12px;
   padding: 1.75rem;
   transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
 }
 
 .vito-card:hover {
-  border-color: #2E86C1;
+  border-color: #C08A3E;
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(46, 134, 193, 0.12);
+  box-shadow: 0 12px 32px rgba(192, 138, 62, 0.12);
 }
 
 .vito-card-dark {
-  background: #112236;
-  border: 1px solid rgba(46, 134, 193, 0.2);
+  background: #2E2418;
+  border: 1px solid rgba(192, 138, 62, 0.2);
 }
 
 .vito-card-dark:hover {
-  border-color: #2E86C1;
-  box-shadow: 0 12px 32px rgba(46, 134, 193, 0.15);
+  border-color: #C08A3E;
+  box-shadow: 0 12px 32px rgba(192, 138, 62, 0.15);
 }
 
 .vito-card-icon {
   width: 44px;
   height: 44px;
-  background: rgba(46, 134, 193, 0.12);
+  background: rgba(192, 138, 62, 0.12);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #2E86C1;
+  color: #C08A3E;
 }
 
 .vito-card h3 {
   font-family: sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #0D1B2A;
+  color: #241C14;
   margin-bottom: 0.5rem;
 }
 
 .vito-card-dark h3 {
-  color: #F4F8FB;
+  color: #FBF7F0;
 }
 
 .vito-card p {
   font-size: 0.9rem;
-  color: #5a7a8a;
+  color: #6b5a45;
   line-height: 1.5;
 }
 
 .vito-card-dark p {
-  color: #8EA8BB;
+  color: #B8A78E;
 }
 
 /* ── CONTACT ── */
@@ -408,37 +408,37 @@
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1.25rem;
-  color: #8EA8BB;
+  color: #B8A78E;
   font-size: 0.95rem;
 }
 
 .vito-contact-item strong {
-  color: #F4F8FB;
+  color: #FBF7F0;
 }
 
 .vito-contact-icon {
   width: 36px;
   height: 36px;
   flex-shrink: 0;
-  background: rgba(46, 134, 193, 0.15);
+  background: rgba(192, 138, 62, 0.15);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  color: #2E86C1;
+  color: #C08A3E;
 }
 
 .vito-contact-box {
   flex: 1;
   min-width: 260px;
-  background: #D6E4F0;
+  background: #EFE6D8;
   border-radius: 12px;
   padding: 2rem;
 }
 
 .vito-contact-box-title {
-  color: #1B3A5C;
+  color: #3B2E22;
   font-size: 0.95rem;
   line-height: 1.8;
   margin-bottom: 1rem;
@@ -446,19 +446,19 @@
 
 .vito-contact-bullet {
   font-size: 0.9rem;
-  color: #1B3A5C;
+  color: #3B2E22;
   line-height: 2;
 }
 
 .vito-check {
-  color: #2E86C1;
+  color: #C08A3E;
   margin-right: 0.5rem;
 }
 
 /* ── FOOTER ── */
 .vito-footer {
-  background: #080f18;
-  border-top: 1px solid rgba(46, 134, 193, 0.15);
+  background: #17110b;
+  border-top: 1px solid rgba(192, 138, 62, 0.15);
   padding: 2rem 5vw;
   display: flex;
   align-items: center;
@@ -471,20 +471,20 @@
   font-family: sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
-  color: #F4F8FB;
+  color: #FBF7F0;
 }
 
 .vito-footer-logo span {
-  color: #2E86C1;
+  color: #C08A3E;
 }
 
 .vito-footer p {
-  color: #8EA8BB;
+  color: #B8A78E;
   font-size: 0.8rem;
 }
 
 .vito-footer-phone {
-  color: #4A90A4 !important;
+  color: #A9744A !important;
   font-size: 0.8rem;
 }
 
