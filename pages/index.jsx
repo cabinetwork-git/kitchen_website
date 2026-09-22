@@ -50,14 +50,14 @@ export default function AlderwoodKitchensLanding() {
 
   return (
   <>
-  <div className={styles["vito-page"]}>
+  <div className={styles["kitchen-page"]}>
     {/* NAV */}
-    <nav className={styles["vito-nav"]}>
-      <div className={styles["vito-logo"]}>
+    <nav className={styles["kitchen-nav"]}>
+      <div className={styles["kitchen-logo"]}>
         Alder<span>wood</span>
       </div>
 
-      <ul className={styles["vito-nav-links"]}>
+      <ul className={styles["kitchen-nav-links"]}>
         <li>
           <a
             href="#services"
@@ -94,14 +94,14 @@ export default function AlderwoodKitchensLanding() {
       </ul>
 
       <button
-        className={styles["vito-nav-cta"]}
+        className={styles["kitchen-nav-cta"]}
         onClick={() => scrollTo("contact")}
       >
         Get a Quote
       </button>
 
       <button
-        className={`${styles["vito-menu-toggle"]} ${menuOpen ? styles["open"] : ""}`}
+        className={`${styles["kitchen-menu-toggle"]} ${menuOpen ? styles["open"] : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
@@ -114,7 +114,7 @@ export default function AlderwoodKitchensLanding() {
 
     {/* MOBILE MENU */}
     {menuOpen && (
-      <div className={styles["vito-mobile-menu"]}>
+      <div className={styles["kitchen-mobile-menu"]}>
         <a
           href="#services"
           onClick={(e) => {
@@ -146,9 +146,9 @@ export default function AlderwoodKitchensLanding() {
     )}
 
     {/* HERO */}
-    <section className={styles["vito-hero"]}>
+    <section className={styles["kitchen-hero"]}>
       <div>
-        <div className={styles["vito-hero-badge"]}>
+        <div className={styles["kitchen-hero-badge"]}>
           Custom Kitchen Design & Manufacturing
         </div>
 
@@ -164,7 +164,7 @@ export default function AlderwoodKitchensLanding() {
           built to fit your space, not the other way around.
         </p>
 
-        <div className={styles["vito-hero-btns"]}>
+        <div className={styles["kitchen-hero-btns"]}>
           <button
             className={styles["btn-primary"]}
             onClick={() => scrollTo("contact")}
@@ -183,43 +183,43 @@ export default function AlderwoodKitchensLanding() {
     </section>
 
     {/* STATS */}
-    <div className={styles["vito-stats"]}>
-      <div className={styles["vito-stat"]}>
-        <div className={styles["vito-stat-num"]}>500+</div>
-        <div className={styles["vito-stat-label"]}>Kitchens Delivered</div>
+    <div className={styles["kitchen-stats"]}>
+      <div className={styles["kitchen-stat"]}>
+        <div className={styles["kitchen-stat-num"]}>500+</div>
+        <div className={styles["kitchen-stat-label"]}>Kitchens Delivered</div>
       </div>
 
-      <div className={styles["vito-stat"]}>
-        <div className={styles["vito-stat-num"]}>8+</div>
-        <div className={styles["vito-stat-label"]}>Service Categories</div>
+      <div className={styles["kitchen-stat"]}>
+        <div className={styles["kitchen-stat-num"]}>8+</div>
+        <div className={styles["kitchen-stat-label"]}>Service Categories</div>
       </div>
 
-      <div className={styles["vito-stat"]}>
-        <div className={styles["vito-stat-num"]}>100%</div>
-        <div className={styles["vito-stat-label"]}>In-House Built</div>
+      <div className={styles["kitchen-stat"]}>
+        <div className={styles["kitchen-stat-num"]}>100%</div>
+        <div className={styles["kitchen-stat-label"]}>In-House Built</div>
       </div>
 
-      <div className={styles["vito-stat"]}>
-        <div className={styles["vito-stat-num"]}>6-8wk</div>
-        <div className={styles["vito-stat-label"]}>Typical Lead Time</div>
+      <div className={styles["kitchen-stat"]}>
+        <div className={styles["kitchen-stat-num"]}>6-8wk</div>
+        <div className={styles["kitchen-stat-label"]}>Typical Lead Time</div>
       </div>
     </div>
 
     {/* SERVICES */}
-    <section className={styles["vito-section"]} id="services">
-      <div className={styles["vito-eyebrow"]}>What We Do</div>
-      <div className={styles["vito-section-title"]}>
+    <section className={styles["kitchen-section"]} id="services">
+      <div className={styles["kitchen-eyebrow"]}>What We Do</div>
+      <div className={styles["kitchen-section-title"]}>
         From first sketch to final install
       </div>
-      <p className={styles["vito-section-sub"]}>
+      <p className={styles["kitchen-section-sub"]}>
         We design, build, and install every kitchen in-house — so the piece
         you approve in the showroom is exactly what ends up in your home.
       </p>
 
-      <div className={styles["vito-grid"]}>
+      <div className={styles["kitchen-grid"]}>
         {services.map((s, i) => (
-          <div key={i} className={styles["vito-card"]}>
-            <div className={styles["vito-card-icon"]}>{s.icon}</div>
+          <div key={i} className={styles["kitchen-card"]}>
+            <div className={styles["kitchen-card-icon"]}>{s.icon}</div>
             <h3>{s.title}</h3>
             <p>{s.desc}</p>
           </div>
@@ -228,25 +228,25 @@ export default function AlderwoodKitchensLanding() {
     </section>
 
     {/* EXPERTISE / MATERIALS */}
-    <div className={styles["vito-section-dark"]} id="expertise">
-      <div className={styles["vito-section-inner"]}>
-        <div className={styles["vito-eyebrow"]}>Materials & Finishes</div>
-        <div className={styles["vito-section-title"]}>
+    <div className={styles["kitchen-section-dark"]} id="expertise">
+      <div className={styles["kitchen-section-inner"]}>
+        <div className={styles["kitchen-eyebrow"]}>Materials & Finishes</div>
+        <div className={styles["kitchen-section-title"]}>
           Quality materials, honest construction
         </div>
-        <p className={styles["vito-section-sub"]}>
+        <p className={styles["kitchen-section-sub"]}>
           No particleboard shortcuts — Alderwood builds with solid wood,
           real surfaces, and hardware rated for decades of daily use.
         </p>
 
-        <div className={styles["vito-grid"]}>
+        <div className={styles["kitchen-grid"]}>
           {materialHighlights.map((c, i) => (
             <div
               key={i}
-              className={`${styles["vito-card"]} ${styles["vito-card-dark"]}`}
+              className={`${styles["kitchen-card"]} ${styles["kitchen-card-dark"]}`}
             >
               <div
-                className={styles["vito-eyebrow"]}
+                className={styles["kitchen-eyebrow"]}
                 style={{ marginBottom: "0.5rem" }}
               >
                 {c.label}
@@ -274,27 +274,27 @@ export default function AlderwoodKitchensLanding() {
     </div>
 
     {/* CONTACT */}
-    <section className={styles["vito-section"]} id="contact">
-      <div className={styles["vito-eyebrow"]}>Get In Touch</div>
-      <div className={styles["vito-section-title"]}>
+    <section className={styles["kitchen-section"]} id="contact">
+      <div className={styles["kitchen-eyebrow"]}>Get In Touch</div>
+      <div className={styles["kitchen-section-title"]}>
         Ready to start designing?
       </div>
-      <p className={styles["vito-section-sub"]}>
+      <p className={styles["kitchen-section-sub"]}>
         Book a free design consultation at our showroom or request a visit
         to your home — we'll help you plan a kitchen that fits your space.
       </p>
 
-      <div className={styles["vito-contact-row"]}>
+      <div className={styles["kitchen-contact-row"]}>
         <div
-          className={styles["vito-contact-info"]}
+          className={styles["kitchen-contact-info"]}
           style={{
             background: COLORS.navy,
             borderRadius: 12,
             padding: "2rem",
           }}
         >
-          <div className={styles["vito-contact-item"]}>
-            <div className={styles["vito-contact-icon"]}>📍</div>
+          <div className={styles["kitchen-contact-item"]}>
+            <div className={styles["kitchen-contact-icon"]}>📍</div>
             <div>
               <strong>123 Main Street, Your City, ST 00000</strong>
               <br />
@@ -302,8 +302,8 @@ export default function AlderwoodKitchensLanding() {
             </div>
           </div>
 
-          <div className={styles["vito-contact-item"]}>
-            <div className={styles["vito-contact-icon"]}>📞</div>
+          <div className={styles["kitchen-contact-item"]}>
+            <div className={styles["kitchen-contact-icon"]}>📞</div>
             <div>
               <strong>(555) 123-4567</strong>
               <br />
@@ -311,8 +311,8 @@ export default function AlderwoodKitchensLanding() {
             </div>
           </div>
 
-          <div className={styles["vito-contact-item"]}>
-            <div className={styles["vito-contact-icon"]}>✉️</div>
+          <div className={styles["kitchen-contact-item"]}>
+            <div className={styles["kitchen-contact-icon"]}>✉️</div>
             <div>
               <strong>info@example.com</strong>
               <br />
@@ -379,12 +379,12 @@ export default function AlderwoodKitchensLanding() {
     </section>
 
     {/* FOOTER */}
-    <footer className={styles["vito-footer"]}>
-      <div className={styles["vito-footer-logo"]}>
+    <footer className={styles["kitchen-footer"]}>
+      <div className={styles["kitchen-footer-logo"]}>
         Alder<span>wood</span>
       </div>
       <p>© 2026 Alderwood Kitchens · Your City, ST · Design & Manufacturing</p>
-      <p className={styles["vito-footer-phone"]}>(555) 123-4567</p>
+      <p className={styles["kitchen-footer-phone"]}>(555) 123-4567</p>
     </footer>
   </div>
   </>
