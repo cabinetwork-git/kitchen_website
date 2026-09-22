@@ -1,0 +1,481 @@
+.birch-page {
+  background: #FAF7F1;
+  color: #1D211F;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── NAV ── */
+.birch-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(29, 33, 31, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(201, 154, 62, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: 64px;
+}
+
+.birch-logo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #FAF7F1;
+  letter-spacing: -0.01em;
+}
+
+.birch-logo span {
+  color: #C99A3E;
+}
+
+.birch-nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.birch-nav-links a {
+  color: #A9A79C;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.birch-nav-links a:hover {
+  color: #FAF7F1;
+}
+
+.birch-nav-cta {
+  background: #C99A3E;
+  color: #1D211F;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.birch-nav-cta:hover {
+  background: #E0B354;
+}
+
+/* ── MOBILE MENU TOGGLE ── */
+.birch-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.birch-menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #FAF7F1;
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.birch-menu-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.birch-menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.birch-menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── MOBILE MENU PANEL ── */
+.birch-mobile-menu {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #1D211F;
+  border-bottom: 1px solid rgba(201, 154, 62, 0.22);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5vw 1.5rem;
+}
+
+.birch-mobile-menu a {
+  color: #A9A79C;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(201, 154, 62, 0.1);
+}
+
+.birch-mobile-menu a:hover {
+  color: #FAF7F1;
+}
+
+/* ── HERO ── */
+.birch-hero {
+  min-height: 100vh;
+  background: linear-gradient(140deg, #1D211F 0%, #34443B 60%, #3d4f43 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 5vw 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.birch-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 65% 35%,
+    rgba(201, 154, 62, 0.16) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.birch-hero-badge {
+  display: inline-block;
+  background: rgba(201, 154, 62, 0.15);
+  border: 1px solid rgba(201, 154, 62, 0.4);
+  color: #D9B45E;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.birch-hero h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  font-weight: 600;
+  color: #FAF7F1;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+}
+
+.birch-hero h1 em {
+  font-style: italic;
+  color: #C99A3E;
+}
+
+.birch-hero p {
+  color: #A9A79C;
+  font-size: 1.1rem;
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+}
+
+.birch-hero-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.birch-btn-primary {
+  background: #C99A3E;
+  color: #1D211F;
+  border: none;
+  cursor: pointer;
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.birch-btn-primary:hover {
+  background: #E0B354;
+  transform: translateY(-2px);
+}
+
+.birch-btn-ghost {
+  background: transparent;
+  color: #FAF7F1;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.birch-btn-ghost:hover {
+  border-color: #C99A3E;
+  background: rgba(201, 154, 62, 0.1);
+}
+
+/* ── STATS STRIP ── */
+.birch-stats {
+  background: #293A30;
+  border-top: 1px solid rgba(201, 154, 62, 0.2);
+  border-bottom: 1px solid rgba(201, 154, 62, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.birch-stat {
+  flex: 1;
+  min-width: 180px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  border-right: 1px solid rgba(201, 154, 62, 0.15);
+}
+
+.birch-stat:last-child {
+  border-right: none;
+}
+
+.birch-stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #C99A3E;
+}
+
+.birch-stat-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #A9A79C;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.25rem;
+}
+
+/* ── SECTIONS ── */
+.birch-section {
+  padding: 5rem 5vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.birch-section-dark {
+  background: #1D211F;
+  max-width: 100%;
+  padding: 5rem 5vw;
+}
+
+.birch-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.birch-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #C99A3E;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.birch-section-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  font-weight: 600;
+  color: #1D211F;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.birch-section-dark .birch-section-title {
+  color: #FAF7F1;
+}
+
+.birch-section-sub {
+  color: #6E6C61;
+  font-size: 1rem;
+  max-width: 520px;
+  margin-bottom: 3rem;
+}
+
+.birch-section-dark .birch-section-sub {
+  color: #A9A79C;
+}
+
+/* ── SERVICE GRID ── */
+.birch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.birch-card {
+  background: #EFE9DB;
+  border: 1px solid rgba(201, 154, 62, 0.18);
+  border-radius: 10px;
+  padding: 1.75rem;
+  transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
+}
+
+.birch-card:hover {
+  border-color: #C99A3E;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(201, 154, 62, 0.14);
+}
+
+.birch-card-dark {
+  background: #293A30;
+  border: 1px solid rgba(201, 154, 62, 0.22);
+}
+
+.birch-card-dark:hover {
+  border-color: #C99A3E;
+  box-shadow: 0 12px 32px rgba(201, 154, 62, 0.16);
+}
+
+.birch-card-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(201, 154, 62, 0.14);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #C99A3E;
+}
+
+.birch-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1D211F;
+  margin-bottom: 0.5rem;
+}
+
+.birch-card-dark h3 {
+  color: #FAF7F1;
+}
+
+.birch-card p {
+  font-size: 0.9rem;
+  color: #6E6C61;
+  line-height: 1.5;
+}
+
+.birch-card-dark p {
+  color: #A9A79C;
+}
+
+/* ── CONTACT ── */
+.birch-contact-row {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.birch-contact-info {
+  flex: 1;
+  min-width: 260px;
+}
+
+.birch-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  color: #A9A79C;
+  font-size: 0.95rem;
+}
+
+.birch-contact-item strong {
+  color: #FAF7F1;
+}
+
+.birch-contact-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: rgba(201, 154, 62, 0.16);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #C99A3E;
+}
+
+/* ── FOOTER ── */
+.birch-footer {
+  background: #14170F;
+  border-top: 1px solid rgba(201, 154, 62, 0.15);
+  padding: 2rem 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.birch-footer-logo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FAF7F1;
+}
+
+.birch-footer-logo span {
+  color: #C99A3E;
+}
+
+.birch-footer p {
+  color: #A9A79C;
+  font-size: 0.8rem;
+}
+
+.birch-footer-phone {
+  color: #D9B45E !important;
+  font-size: 0.8rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .birch-nav-links {
+    display: none;
+  }
+
+  .birch-menu-toggle {
+    display: flex;
+  }
+
+  .birch-stat {
+    min-width: 140px;
+    padding: 1.5rem;
+  }
+
+  .birch-contact-row {
+    flex-direction: column;
+  }
+}
